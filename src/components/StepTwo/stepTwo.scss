@@ -1,0 +1,38 @@
+.step-two {
+.plan-card{
+  border: 1px solid var(--clr-primary-500);
+  position: relative;
+  display: flex;
+  gap: 1rem;
+  padding: .8rem 1rem;
+  border-radius: .5rem;
+  width: 100%;
+  input{
+    width: 0;
+    height: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .radio-label{
+    span{
+      display: block;
+    }
+    span:first-child{
+      color: var(--clr-primary-500);
+      font-weight: 700;
+      padding-bottom: .3rem;
+    }
+    span:nth-child(2){
+      font-size: .9rem;
+      color: var(--clr-neutral-500);
+    }
+    span:nth-child(3){
+      color: var(--clr-primary-500);
+      font-size: .8rem;
+      font-weight: 500;
+      padding-top: .2rem;
+    }
+  }  
+}
+}

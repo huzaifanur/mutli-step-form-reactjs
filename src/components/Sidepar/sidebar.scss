@@ -1,0 +1,28 @@
+.sidebar {
+  background-image: url(../../images/bg-sidebar-mobile.svg);
+  background-repeat: no-repeat;
+  .sidebar-container {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin-inline: auto;
+    padding: 2rem 0 6rem 0;
+    .rounded-number {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      font-size: 1rem;
+      height: 35px;
+      aspect-ratio: 1;
+      border-radius: 50%;
+      color: var(--clr-neutral-200);
+      border: 1px solid var(--clr-primary-300);
+
+      &:hover {
+        background-color: var(--clr-primary-300);
+        color: var(--clr-primary-800);
+      }
+    }
+  }
+}

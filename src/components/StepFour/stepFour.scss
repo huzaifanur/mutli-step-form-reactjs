@@ -1,0 +1,48 @@
+.step-four {
+  .summary-wrapper {
+    background-color: var(--clr-neutral-300);
+    padding: 1rem;
+    border-radius: 1rem 0.5rem;
+  }
+  .invoice-total {
+    padding-inline: 1.5rem;
+    p:nth-child(1) {
+      color: var(--clr-neutral-500);
+    }
+    p:nth-child(2) {
+      color: var(--clr-primary-400);
+      font-weight: 700;
+    }
+  }
+  .summary-header {
+    font-weight: 500;
+    color: var(--clr-primary-500);
+  }
+  // :TODO   //doing this for now,will change this dirty css with utility classes
+  .btn-change-plan {
+    text-decoration: underline;
+    color: var(--clr-neutral-500);
+  }
+  .plan-price-basic {
+    font-weight: 700;
+    color: var(--clr-primary-500);
+  }
+  .hr-in-summary {
+    border: none;
+    height: 1px;
+    background-color: var(--clr-neutral-400);
+  }
+  p[addon="detail"] {
+    color: var(--clr-neutral-500);
+  }
+  p[addon="price"] {
+    color: var(--clr-primary-500);
+    font-size: 0.9rem;
+    font-weight: 700;
+  }
+}
+.two-columns {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
