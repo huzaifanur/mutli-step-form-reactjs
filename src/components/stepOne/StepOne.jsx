@@ -2,7 +2,7 @@ import "./stepOne.scss";
 
 export default function StepOne() {
   return (
-    <div className="step-one| flow" style={{ "--flow-space": "1.3rem" }}>
+    <div className="step-one | flow">
       <h1 className="form-heading">Personal info</h1>
       <p className="form-desc">Please provide your name, email, adress and phone number</p>
       <div>
@@ -27,7 +27,7 @@ export default function StepOne() {
         <label className="form-label" htmlFor="phone-number">
           Phone Number
         </label>
-        <input id="phone-number" type="tel" placeholder="Please provide your name" required />
+        <input id="phone-number" type="tel" placeholder="e.g. +123 456 7890" required />
       </div>
     </div>
   );

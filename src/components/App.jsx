@@ -8,18 +8,19 @@ import ThankYou from "./ThankYou/ThankYou";
 
 function App() {
   return (
-    <div className="App">
-      <Sidebar />
-
-      <div className="main-content">
-        <div className="content-wrapper">
-          {/* <StepOne /> */}
-          {/* <StepTwo /> */}
-          {/* <StepThree/> */}
-          {/* <StepFour /> */}
-          <ThankYou />
+    <div className="container">
+      <div className="App">
+        <Sidebar />
+        <div className="main-content">
+          <div className="form-area">
+            {/* <StepOne /> */}
+            {/* <StepTwo /> */}
+            {/* <StepThree /> */}
+            <StepFour />
+            {/* <ThankYou /> */}
+          </div>
+          <Navigation />
         </div>
-        <Navigation />
       </div>
     </div>
   );
