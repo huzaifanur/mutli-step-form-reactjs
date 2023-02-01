@@ -1,34 +1,40 @@
 import "./sidebar.scss";
 
-export default function Sidebar() {
+const steps = [
+  {
+    number: 1,
+    title: "step 1",
+    info: "Your info",
+  },
+  {
+    number: 2,
+    title: "step 2",
+    info: "Select plan",
+  },
+  {
+    number: 3,
+    title: "step 3",
+    info: "Add-ons",
+  },
+  {
+    number: 4,
+    title: "step 4",
+    info: "Summary",
+  },
+];
+
+export default function Sidebar({ step }) {
   return (
     <div className="sidebar">
       <div className="sidebar-container">
-        <div className="step">
-          <h2 className="rounded-number">1</h2>
-          <div className="step-desc | hide-on-mobile">
-            <span>Step 1</span> <p>Your info</p>
+        {steps.map((s) => (
+          <div className="step">
+            <h2 className={s.number === step ? "rounded-number | selected" : "rounded-number"}>{s.number}</h2>
+            <div className="step-desc | hide-on-mobile">
+              <span>{s.title}</span> <p>{s.info}</p>
+            </div>
           </div>
-        </div>
-
-        <div className="step">
-          <h2 className="rounded-number">2</h2>
-          <div className="step-desc | hide-on-mobile">
-            <span>Step 2</span> <p>Select plan</p>
-          </div>
-        </div>
-        <div className="step">
-          <h2 className="rounded-number">3</h2>
-          <div className="step-desc | hide-on-mobile">
-            <span>Step 3</span> <p>Add-ons</p>
-          </div>
-        </div>
-        <div className="step">
-          <h2 className="rounded-number">4</h2>
-          <div className="step-desc | hide-on-mobile">
-            <span>Step 4</span> <p> Summary</p>
-          </div>
-        </div>
+        ))}
       </div>
     </div>
   );
